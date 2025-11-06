@@ -1,6 +1,9 @@
 # 🐋 Ground
 
 ![Python](https://img.shields.io/badge/python-3.11-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![License](https://img.shields.io/badge/license-Apache%202.0-green)
 
 Ground is an interactive grounding and mindfulness app that helps users refocus using the 5-4-3-2-1 grounding technique.  
