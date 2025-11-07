@@ -17,7 +17,7 @@ export default function App() {
       )}
       {stage === "crisis" && <CrisisSupport onBack={() => setStage("safety")} />}
       {stage === "exercise" && (
-        <GroundingExercise onComplete={() => setStage("summary")} />
+        <GroundingExercise onComplete={(responses) => setStage("summary")} />
       )}
       {stage === "summary" && <Summary />}
     </div>
