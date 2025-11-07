@@ -27,11 +27,21 @@ This project is designed as a learning journey in full-stack and mobile developm
 - No dependencies initially (standard library only)
 
 ## Getting Started
+### Python MVP
 ```bash
 git clone https://github.com/JLuchkiw/Ground.git
 cd Ground/mvp_console
 python grounding_companion.py
 ```
+### Web App (React + JavaScript)
+```bash
+git clone https://github.com/JLuchkiw/Ground.git
+cd Ground/web_app
+npm install
+npm run dev
+```
+Once the development server starts, open your browser and go to http://localhost:5173 to view the app.
+Make sure you have Node.js (v18+) installed.
 
 ## Roadmap
 - [x] MVP Console Version
