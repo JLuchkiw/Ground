@@ -50,6 +50,11 @@ if (!isLastPromptInCategory) {
         type="text"
         value={response}
         onChange={(e) => setResponse(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && response.trim()) {
+            handleNext();
+          }
+        }}
         className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-sky-400"
         placeholder="Type your answer..."
       />
