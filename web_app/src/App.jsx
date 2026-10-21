@@ -6,6 +6,7 @@ import CrisisSupport from "./components/CrisisSupport.jsx";
 
 export default function App() {
   const [stage, setStage] = useState("safety");
+  const [responses, setResponses] = useState([]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-100 to-sky-300 flex items-center justify-center">
@@ -17,9 +18,22 @@ export default function App() {
       )}
       {stage === "crisis" && <CrisisSupport onBack={() => setStage("safety")} />}
       {stage === "exercise" && (
-        <GroundingExercise onComplete={(responses) => setStage("summary")} />
+        <GroundingExercise
+          onComplete={(completedResponses) => {
+            setResponses(completedResponses);
+            setStage("summary");
+      }}
+  />
+)}
+      {stage === "summary" && (
+        <Summary
+          responses={responses}
+          onRestart={() => {
+            setResponses([]);
+            setStage("safety");
+          }}
+        />
       )}
-      {stage === "summary" && <Summary />}
     </div>
   );
 }
